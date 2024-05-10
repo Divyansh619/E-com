@@ -12,6 +12,9 @@ const Index = (props) => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
 
+
+
+
   const handleAddToCart = (product) => {
     addToCart(product);
     setTotalPrice(totalPrice + product.price);
@@ -40,6 +43,8 @@ const Index = (props) => {
           </span>
         </div>
       </div>
+
+      
       {/* Notification */}
       {notification && (
         <div
